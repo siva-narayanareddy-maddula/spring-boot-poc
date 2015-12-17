@@ -1,0 +1,69 @@
+CDC5-C02MK493FH00-P:skeleton-web-services si255323$ mvn spring-boot:run
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building skeleton-web-services 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.3.0.RELEASE:run (default-cli) > test-compile @ skeleton-web-services >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ skeleton-web-services ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/si255323/knight/for_narayana/practice/skeleton-web-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ skeleton-web-services ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ skeleton-web-services ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/si255323/knight/for_narayana/practice/skeleton-web-services/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ skeleton-web-services ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.3.0.RELEASE:run (default-cli) < test-compile @ skeleton-web-services <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.3.0.RELEASE:run (default-cli) @ skeleton-web-services ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.1.RELEASE)
+
+2015-12-17 18:15:21.795  INFO 15948 --- [           main] org.example.Application                  : Starting Application on CDC5-C02MK493FH00-P with PID 15948 (/Users/si255323/knight/for_narayana/practice/skeleton-web-services/target/classes started by si255323 in /Users/si255323/knight/for_narayana/practice/skeleton-web-services)
+2015-12-17 18:15:21.956  INFO 15948 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73fd2af6: startup date [Thu Dec 17 18:15:21 IST 2015]; root of context hierarchy
+2015-12-17 18:15:23.549  INFO 15948 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-12-17 18:15:25.595  INFO 15948 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-12-17 18:15:26.284  INFO 15948 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-12-17 18:15:26.289  INFO 15948 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.15
+2015-12-17 18:15:26.689  INFO 15948 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-12-17 18:15:26.691  INFO 15948 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4749 ms
+2015-12-17 18:15:29.195  INFO 15948 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-12-17 18:15:29.211  INFO 15948 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-12-17 18:15:29.213  INFO 15948 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-12-17 18:15:29.371  INFO 15948 --- [ost-startStop-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [148] milliseconds.
+2015-12-17 18:15:30.241  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73fd2af6: startup date [Thu Dec 17 18:15:21 IST 2015]; root of context hierarchy
+2015-12-17 18:15:30.496  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/greetings],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Collection<org.example.ws.model.Greeting>> org.example.ws.web.api.GreetingController.getGreetings()
+2015-12-17 18:15:30.498  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/greetings/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<org.example.ws.model.Greeting> org.example.ws.web.api.GreetingController.getGreeting(java.math.BigInteger)
+2015-12-17 18:15:30.500  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/greetings],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<org.example.ws.model.Greeting> org.example.ws.web.api.GreetingController.createGreeting(org.example.ws.model.Greeting)
+2015-12-17 18:15:30.501  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/greetings],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[application/json],custom=[]}" onto public org.springframework.http.ResponseEntity<org.example.ws.model.Greeting> org.example.ws.web.api.GreetingController.updateGreeting(org.example.ws.model.Greeting)
+2015-12-17 18:15:30.503  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/greetings/{id}],methods=[DELETE],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<org.example.ws.model.Greeting> org.example.ws.web.api.GreetingController.deleteGreeting(java.math.BigInteger,org.example.ws.model.Greeting)
+2015-12-17 18:15:30.509  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-12-17 18:15:30.510  INFO 15948 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-12-17 18:15:30.632  INFO 15948 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-17 18:15:30.633  INFO 15948 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-17 18:15:30.818  INFO 15948 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-12-17 18:15:31.096  INFO 15948 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-12-17 18:15:31.365  INFO 15948 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-12-17 18:15:31.375  INFO 15948 --- [           main] org.example.Application                  : Started Application in 10.651 seconds (JVM running for 22.138)
+
+
+
+
+2015-12-17 18:15:44.079  INFO 15948 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-12-17 18:15:44.079  INFO 15948 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2015-12-17 18:15:44.153  INFO 15948 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 73 ms
+
